@@ -49,10 +49,10 @@ class ofxBone {
 	ofMatrix4x4							localJointTransformMatrix;
 	
 	virtual void customDraw();
-	void								setTransformMatrix(ofMatrix4x4 m_);
 	
 public:
 	
+	void								setTransformMatrix(ofMatrix4x4 m_);
 	void								setOrientation(ofQuaternion orientation_);
 	void								setOrientationAtJoint(ofQuaternion orientation_);
 
@@ -80,7 +80,6 @@ public:
 	const ofQuaternion					getGlobalOrientation()			const;
 	const ofVec3f						getGlobalPosition()				const;
 	const ofVec3f						getGlobalJointPosition()		const;
-	
 	
 	ofxBone()
 	:parent()	// will automatically initialize as a NULL shared ptr.
