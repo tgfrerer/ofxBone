@@ -275,7 +275,7 @@ void ofxBoneIKchain::solve(){
 			// calculate the total angle
 			q.getRotate(jointOldAngle, jointOldAxis);
 			// clamp to the max angle.
-			q.makeRotate(ofClamp(jointOldAngle,-90,90), jointOldAxis);
+			q.makeRotate(ofClamp(jointOldAngle,-60,80), jointOldAxis);
 			bone->setOrientationAtJoint(q);
 			
 			
