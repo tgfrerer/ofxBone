@@ -42,11 +42,23 @@ void ofxBone::customDraw(){
 		p1 = p1 * ofMatrix4x4::getInverseOf(getGlobalTransformMatrix()) ;
 	}
 	
-	ofDrawArrow(p1, p2, 5);
-	ofDrawAxis(30);
+	ofSetColor(ofColor::white);
+	ofDrawArrow(p1, p2, 4);
+	ofSphere(2);
+	
+	// draw x axis
+	ofSetColor(ofColor::red);
+	ofLine(0, 0, 0, 10, 0, 0);
+	
+	// draw y axis
+	ofSetColor(ofColor::green);
+	ofLine(0, 0, 0, 0, 10, 0);
+	
+	// draw z axis
+	ofSetColor(ofColor::blue);
+	ofLine(0, 0, 0, 0, 0, 10);
 
 	
-
 }
 
 
